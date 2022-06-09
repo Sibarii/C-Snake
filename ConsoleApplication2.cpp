@@ -6,10 +6,6 @@
 #include "Snake/Snake.h"
 #include <chrono>
 
-void test() {
-
-}
-
 int main() {
 	//World w = World(30, 10);
 	Snake s = Snake(3, 7);
