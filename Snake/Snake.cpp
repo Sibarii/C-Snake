@@ -3,6 +3,8 @@
 #include <iostream>
 #include <windows.h>
 #include <conio.h>
+#include <chrono>
+#include <ctime>
 
 //#include <stdio.h>
 //#include <ctype.h>
@@ -18,12 +20,13 @@ Snake::Snake(int x, int y) {
 }
 
 void Snake::snake(int x, int y) {
+	firstTime = clock();
 	headX = x;
 	headY = y;
 
 	GoTo(43 + headX, 5 + headY);
 	//GoTo(43 + headX, 5 + headY);
-	std::cout << "o";
+	//std::cout << "o";
 }
 
 void Snake::input() {
@@ -42,7 +45,16 @@ void Snake::input() {
 }
 
 void Snake::move(int x, int y) {
-	snake(x, y);
+	double difference;
+
+	lastTime = clock();
+	difference = difftime(lastTime, firstTime);
+
+	if (difference >= 400) {
+		std::cout << difference << std::endl;
+
+		snake(x, y);
+	}
 }
 
 bool snakeDie() {

@@ -131,7 +131,6 @@
     <ClCompile Include="ConsoleApplication2.cpp" />
     <ClCompile Include="ConsoleTools\GoTo.cpp" />
     <ClCompile Include="Menu\Menu.cpp" />
-    <ClCompile Include="Snake\Speed\SnakeSpeed.cpp" />
     <ClCompile Include="Snake\Snake.cpp" />
     <ClCompile Include="Timer\Timer.cpp" />
     <ClCompile Include="World\World.cpp" />
@@ -141,7 +140,6 @@
     <ClInclude Include="ConsoleApplication2.h" />
     <ClInclude Include="ConsoleTools\GoTo.h" />
     <ClInclude Include="Menu\Menu.h" />
-    <ClInclude Include="Snake\Speed\SnakeSpeed.h" />
     <ClInclude Include="Snake\Snake.h" />
     <ClInclude Include="Timer\Timer.h" />
     <ClInclude Include="World\World.h" />

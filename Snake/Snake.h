@@ -7,8 +7,9 @@ private:
 	int headY;
 	int bodyPositions[999][1];
 
-	time_t firstTime;
-	time_t lastTime;
+	clock_t firstTime;
+	clock_t lastTime;
+
 public:
 	Snake(int x, int y);
 

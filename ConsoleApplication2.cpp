@@ -4,11 +4,6 @@
 #include "World/World.h"
 #include "Timer/Timer.h"
 #include "Snake/Snake.h"
-#include <chrono>
-
-void test() {
-
-}
 
 int main() {
 	//World w = World(30, 10);
